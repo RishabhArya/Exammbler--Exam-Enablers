@@ -1,0 +1,121 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.button.btn, button.btn, input[type=button].glitch, input[type=submit].glitch {
+  width: 14.875rem;
+  padding: 0;
+  font-size: 1rem;
+  color:#000000;
+  position: relative;
+  z-index: 1;
+}
+
+.button.btn:focus:before, .button.btn:before, button.btn:focus:before, button.btn:before, input[type=button].glitch:focus:before, input[type=button].glitch:before, input[type=submit].glitch:focus:before, input[type=submit].glitch:before {
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+.button.btn:focus:after, .button.btn:after, button.btn:focus:after, button.btn:after, input[type=button].glitch:focus:after, input[type=button].glitch:after, input[type=submit].glitch:focus:after, input[type=submit].glitch:after {
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+.button.btn:focus .text, .button.btn .text, button.btn:focus .text, button.btn .text, input[type=button].glitch:focus .text, input[type=button].glitch .text, input[type=submit].glitch:focus .text, input[type=submit].glitch .text {
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.button.btn:after, .button.btn:before, button.btn:after, button.btn:before, input[type=button].glitch:after, input[type=button].glitch:before, input[type=submit].glitch:after, input[type=submit].glitch:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.button.btn:before, button.btn:before, input[type=button].glitch:before, input[type=submit].glitch:before {
+  background: #68f6a4;
+  z-index: -1;
+}
+
+.button.btn:after, button.btn:after, input[type=button].glitch:after, input[type=submit].glitch:after {
+  background: #f22181;
+  z-index: -2;
+}
+
+.button.btn .text, button.btn .text, input[type=button].glitch .text, input[type=submit].glitch .text {
+  display: block;
+  padding: 1.55rem 1.5rem;
+  background: #fff;
+  transition: -webkit-filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-filter 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@-webkit-keyframes glitch {
+  0%,100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+}
+
+@keyframes glitch {
+  0%,100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+}
+button.btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  cursor: pointer;
+  margin: 1em;
+}
+button.btn span {
+  font-weight: bold;
+}

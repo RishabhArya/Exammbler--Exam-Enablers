@@ -1,0 +1,62 @@
+.button9 {
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'RobotoMono', monospace;
+  padding: 25px
+  width: 170px;
+  margin: 250px auto;
+  text-align: center;
+  position: relative;
+}
+.button9:hover {
+  cursor: pointer;
+}
+.button9:hover span:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+.button9:hover span:before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+span:after, span:before {
+  padding: 25px;
+  width: 170px;
+  content: 'Hover me';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  opacity: .7;
+}
+
+span:before {
+  border: 2px solid #0ff;
+  z-index: -2;
+  color: #0ff;
+}
+
+span:after {
+  border: 2px solid #f0f;
+  z-index: -2;
+  color: #f0f;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(-3px, -3px);
+  }
+  60% {
+    transform: translate(3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
