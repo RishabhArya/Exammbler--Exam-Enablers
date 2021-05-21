@@ -11,10 +11,10 @@ if($temp==true)
 }
 else
 {
- $str=substr_compare("$mtcid","MTC000",0,6,TRUE);
+ $str=substr_compare("$mtcid","5000",0,4,TRUE);
  if($str!=0)
  {
-   echo "<script>alert('WRONG MTC-ID Try Again');window.location ='login.html';</script>";
+   echo "<script>alert('WRONG SAP-ID Try Again');window.location ='login.html';</script>";
  }
  else if($str==0){
   $que=mysqli_query($conn,"SELECT * FROM users WHERE mtcid='".$mtcid."' AND password='".$pass."'");
@@ -42,7 +42,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Thank you for registering|UPES-MTC</title>
+<title>Thank you for registering</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

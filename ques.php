@@ -28,7 +28,7 @@ $up = mysqli_query($conn,"UPDATE users SET log = 2 WHERE mtcid ='".$mtcidd."'");
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
-<title>BUGYMANIA|UPES-MTC</title>
+<title>Exammbler|UPES-MTC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Event Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -88,7 +88,7 @@ color:#fff;
 	<header>
     <div class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-ix="move-down-on-load-1" id="Top">
      <div class="container w-container" data-ix="move-down-on-load-1">
-        <a class="brand w-nav-brand" href="index.html"><img class="img-responsive mtc" src="images/MTC1.png" width="200" height="70"></a>
+        <a class="brand w-nav-brand" href="index.html"><img class="img-responsive mtc" src="images/Exammbler.png" width="200" height="70"></a>
 	      <a href="login.html"><a href="logout.php"><button type="button" class="btn btn-Basic bn">LOG OUT</button></a></a>
      </div>
    </div>
